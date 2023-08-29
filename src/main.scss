@@ -1,0 +1,63 @@
+// main.scss
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+@import 'error';
+
+body {
+    background-image: $background-image-url;
+}
+
+.logo {
+    display: flex;
+    &.centered {
+        @include flex-center;
+    }
+}
+
+.grid{
+    height: 420px;
+    width: 419px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: $background-image-url;
+}
+
+.grid div{
+    height: 40px;
+    width: 39px;
+    border: #227126 solid 1px;
+
+}
+
+.dropdown {
+    @include position-transform(relative, 0);
+}
+
+.tankTest {
+    @include position-transform(absolute, 10%);
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+.refresh {
+    width: 90px;
+    text-align: center;
+    @include flex-center;
+    margin-left: 10.5%;
+    margin-bottom: 5px;
+}
+
+.container {
+    @include flex-center;
+    flex-direction: column;
+}
+
+#flame{
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-132px);
+    padding-right: 830px;
+    display: none;
+}

@@ -1,0 +1,8 @@
+// _functions.scss
+@function calculate-total($price, $quantity) {
+    @return $price * $quantity;
+}
+
+@function darken-color($color, $percentage) {
+    @return darken($color, $percentage);
+}

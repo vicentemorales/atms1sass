@@ -1,0 +1,11 @@
+// _mixins.scss
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin position-transform($position, $translate) {
+    position: $position;
+    transform: translateX($translate);
+}

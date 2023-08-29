@@ -1,0 +1,64 @@
+body {
+  background-image: url(../Assets/grass.png);
+}
+
+.logo {
+  display: flex;
+}
+.logo.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  height: 420px;
+  width: 419px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url(../Assets/grass.png);
+}
+
+.grid div {
+  height: 40px;
+  width: 39px;
+  border: #227126 solid 1px;
+}
+
+.dropdown {
+  position: relative;
+  transform: translateX(0);
+}
+
+.tankTest {
+  position: absolute;
+  transform: translateX(10%);
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+.refresh {
+  width: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10.5%;
+  margin-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#flame {
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-132px);
+  padding-right: 830px;
+  display: none;
+}/*# sourceMappingURL=main.css.map */
